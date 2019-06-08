@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>video</title>
+    </head>
+    <body>
+
+        <div>
+            <button type="button" onclick="playPause()">Play or Pause</button>
+            <button type="button" onclick="makeItBig()">Make It Big</button>
+            <button type="button" onclick="makeSmall()">Make It Small</button>
+            <button type="button" onclick="makeNormal()">Make It Normal</button>
+            
+            <video id="v1" width="320" height="240" controls>
+                    <source src="(OST.Dilwale) Janam Janam - Nathan Fingerstyle _ Guitar Cover _ Shah Rukh Khan _ Kajol _ Arijit.mp4" type="video/mp4">
+            
+            </video>
+
+        </div>
+
+        <script>
+
+            var myVideo=document.getElementById("v1");
+
+            function playPause()
+            {
+                if(myVideo.paused)
+                {
+                    myVideo.play();
+                }
+                else if(myVideo.play)
+                {
+                    myVideo.pause();
+                }
+            }
+
+            function makeItBig()
+            {
+                myVideo.width=1024;
+                myVideo.height=550;
+            }
+
+            function makeSmall()
+            {
+                myVideo.width=440;
+                myVideo.height=450;
+            }
+
+            function makeNormal()
+            {
+                myVideo.width=660;
+                myVideo.height=550;
+            }
+
+        </script>    
+
+    </body>
+</html>

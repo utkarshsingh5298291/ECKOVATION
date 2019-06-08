@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>table4</title>
+        <style>
+        table,tr,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+        }
+        th{
+            text-align: left;
+        }
+        table{
+            width: 100%;
+            border-spacing: 10px;
+           
+        }
+        table#t09 tr:nth-child(even){
+          background-color: gainsboro;  
+        }
+        table#t09 tr:nth-child(odd){
+          background-color:gray;  
+        }
+        table#t09 th{
+          background-color:brown;
+        }
+        </style>
+    </head>
+    
+    <body>
+       
+       
+        <table id="t09">
+            <caption>User Deatails</caption>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Contact</th>
+            </tr>
+
+            <tr>
+                <td>Admin</td>
+                <td>23456</td>
+                <td>98765</td>
+            </tr>
+            <tr>
+                    <td>Admin</td>
+                    <td>23456</td>
+                    <td>98765</td>
+                </tr>
+                <tr>
+                        <td>Admin</td>
+                        <td>23456</td>
+                        <td>98765</td>
+                    </tr>                
+        </table>
+
+
+    </body>
+</html>
