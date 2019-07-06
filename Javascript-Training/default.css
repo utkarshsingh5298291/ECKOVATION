@@ -1,0 +1,26 @@
+#ulist
+{
+    margin: 0;
+    padding: 0;
+    z-index: 30;
+}
+#ulist{
+    margin:0;
+    padding:0;
+    list-style: none;
+    float: left;
+    font: bold 11px arial;
+}
+#ulist li a{
+
+    display: block;
+    margin: 0 1px 0 0;
+    padding: 4px 10px;
+    width: 50px;
+    background: #597082;
+    color: #fff;
+    text-decoration: none;
+}
+#ulist{
+    background:#49a3ff;
+}

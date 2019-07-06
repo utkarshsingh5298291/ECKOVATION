@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .c{
+            margin:150px;
+            width: 300px;
+            height: 100px;
+
+            background-color: burlywood;
+            transform: rotateZ(120deg);/*rotateX rotateY,rotate Z*/
+        }
+      
+        .d{
+            
+            width: 100px;
+            height: 100px;
+
+            background:blue;
+            transition: width 2s
+        }
+        .d:hover{
+            width: 300px; 
+        }
+
+        @keyframes ex{
+            from{
+                background-color:brown;
+            }
+            to{
+                background-color: chocolate;
+            }
+        }
+        .e{
+            width: 100px;
+            height:100px;
+            animation-name: ex;
+            animation-duration: 3s;
+            background:brown;
+        }
+
+        @keyframes ex3{
+            0%{
+                background-color:brown; left:0px; top: 0px;
+            }
+            25%{
+                background-color: chocolate;left:200px; top: 0px;
+
+            }
+            75%{
+                background-color: grey;left:0px; top: 200px;
+
+            }
+            100%{
+                background-color: black;left:0px; top: 0px;
+
+            }
+        }
+        .f{
+            width: 100px;
+            height:100px;
+            position: relative;
+            animation-name: ex3;
+            animation-duration: 5s;
+            background:brown;
+            /*animation-delay: 2s;*/
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div class="c">This is a shadow demo.</div>
+        <div class="d">This is demo 2.</div>
+        <div class="e">This is demo 3.</div>
+        <div class="f">This is demo 3.</div>
+    </body>
+</html>

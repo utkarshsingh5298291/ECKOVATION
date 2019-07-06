@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="default.css">
+            <script>
+            
+                    var timeout=500;
+                    var closetimer=0;
+                    var ddmenuitem=0;
+    
+                function menuopen(id)
+                {
+                    console.log("hello");
+                   menucancelclosetime();
+                   if(ddmenuitem)
+                   {
+                       ddmenuitem.style.visibility='hidden';
+                       ddmenuitem=document.getElementById(id);
+                       ddmenuitem.style.visibility='visible';
+                   }
+                }
+    
+                function menuclose()
+                {
+                    if(ddmenuitem)
+                    {
+                        ddmenuitem.style.visibility='hidden';
+                    }
+                }
+    
+                function menuclosetime()
+                {
+                    closetimer=window.setTimeout(menuclose,timeout);
+                }
+                function menucancelclosetime()
+                {
+                    if(closetimer)
+                    {
+                        window.clearTimeout(closetimer);
+                        closetimer=null;
+                    }
+                }
+                document.onclick=menuclose;
+            </script>
+    </head>
+    <body>
+        <ul id="ulist">
+            <li>
+                <a href="#" onmouseover="menuopen('l1')" onmouseout="menuclosetime()">Home</a>
+                <div id="l1" onmouseover="menucancelclosetime()" onmouseout="menuclosetime()">
+                        <a href="#">Home1</a>
+                        <a href="#">Home2</a>
+                        <a href="#">Home3</a>
+                        <a href="#">Home4</a>
+
+                </div>
+            </li>
+
+            <li>
+                <a href="#" onmouseover="menuopen('l2')" onmouseout="menuclosetime()">Download</a>
+                <div id="l2" onmouseover="menucancelclosetime()" onmouseout="menuclosetime()">
+                    <a href="#">Download1</a>
+                    <a href="#">Download2</a>
+                    <a href="#">Download3</a>
+                    <a href="#">Download4</a>
+                </div>
+            </li>
+
+            <li><a href="#" onmouseover="menuopen('l3')" onmouseout="menuclosetime()">Order</a>
+                <div id="l3" onmouseover="menucancelclosetime()" onmouseout="menuclosetime()">
+                        <a href="#">Order1</a>
+                        <a href="#">Order2</a>
+                        <a href="#">Order3</a>
+                        <a href="#">Order4</a>
+                </div>
+            </li>
+        </ul>
+        
+    </body>
+</html>

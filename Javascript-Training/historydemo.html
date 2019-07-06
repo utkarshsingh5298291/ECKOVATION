@@ -1,0 +1,25 @@
+<!--goBack()
+    goFroward()
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+              function goBack()
+              {
+                 // window.history.back();
+                 document.write(window.location.hostname);
+              }  
+              function goForward()
+              {
+                  //window.history.forward();
+                  document.write(window.location.hostname);
+              }  
+        </script>
+    </head>
+    <body>
+        <input type="button" value="go back" onclick="goBack()">
+        <input type="button" value="go forward" onclick="goForward()">
+
+    </body>
+</html>

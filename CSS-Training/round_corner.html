@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #rcorner1{
+                border-radius: 25px;
+                /*background-color:rgba(0,0,255, 0.3);*/
+                background-color:hsla(120,100%,75%,0.2);
+                padding:20px;
+                width: 200px;
+                height: 150px;
+            }
+            #rcorner2{
+                border-radius: 25px;
+                border: 2px solid blueviolet;
+                padding:20px;
+                width: 200px;
+                height: 150px;
+            }
+            #rcorner3{
+                border-radius: 15px 50px 30px 5px;
+                background-color: blueviolet;
+                padding:20px;
+                width: 200px;
+                height: 150px;
+            }
+            #rcorner4{
+                
+                border:10px solid transparent;
+                border-image: url(index.png) 30 round;
+                padding:20px;
+                width: 200px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="rcorner1" rounded corner></p>
+        <p id="rcorner2" rounded corner></p>
+        <p id="rcorner3" rounded corner></p>
+        <p id="rcorner4" rounded corner></p>
+
+    </body>
+</html>

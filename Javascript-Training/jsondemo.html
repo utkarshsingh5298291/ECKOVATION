@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="data">
+
+        </div>
+
+        <script>
+                    var users=[
+
+                    {name:'Utkarsh',age:22},
+                    {name:'Rishu',age:22}
+                    
+                     ]
+
+
+                              //when json is in string format then we need to parse 
+
+                              var cllg='{name:"jaypee",deg:"b-tech"}'
+
+                              var obj=JSON.parse(cllg);
+
+        document.getElementById("data").innerHTML=users[0].name;
+        document.getElementById("data").innerHTML=obj[0].name;
+
+        </script>
+    </body>
+</html>

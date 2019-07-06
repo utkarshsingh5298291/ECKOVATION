@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        add number:<input type="text" id="txt">
+        <button type="button" onclick="validation()">Click me</button>
+        <p id="demo"></p>
+        
+        <script>
+            // try{
+            //     addalert("Welcome demo");
+            // }
+            // catch(err){
+            //     document.getElementById("demo").innerHTML=err.message;
+
+            // }
+            //1.)try catch
+            //2.)throw
+            //3.)finally
+
+            function validation(){
+                var meassage,x;
+                meassage=document.getElementById("demo");
+                meassage.innerHTML="";
+                x=document.getElementById("txt").value;
+                alert(x);
+                x=Number(x);
+                    try{
+                        //if(x=="")throw "empty value";
+                        x.toUpperCase();
+                        
+                    }
+                    catch(err){
+                        meassage.innerHTML="value is " +err;
+                    }
+                
+            }
+        </script>
+    </body>
+</html>

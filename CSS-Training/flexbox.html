@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container{
+                display:flex;/* need to set display property  to flex or it won't work*/
+                background-color:blueviolet;
+                flex-direction:initial;
+                flex-wrap: wrap;
+                align-items: stretch;
+                justify-content: center;
+            }
+            .flex-container >div{
+               width: 100px;
+               text-align: center;
+               line-height: 86px;
+               background-color: grey;
+               margin:10px;
+               padding:20px;
+               font-size: 30px;
+
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <!--
+            BEFORE FLEXBOX WAS INTRODUCED ,THESE WERE USED:--
+
+            block--for section in a webpage.
+            inline--foe text
+            table--for teo dim datatable
+            position--explicit posi of an element
+        -->
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        </body>
+</html>

@@ -1,0 +1,16 @@
+>browser object model
+
+>document object model
+    -html dom
+    -xml dom
+
+>javascript can be used as-
+    -onclick
+    -onblur
+    -on html change
+    -html render
+
+ >ways to get element-
+    -GetElementById();
+    -GetElementByClass();
+    -GetElementByTagName();

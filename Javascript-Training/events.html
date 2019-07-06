@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style></style>
+    </head>
+    <body>
+        <p>para1</p>
+        
+        <p>para2</p>
+        
+        <p>para3</p>
+
+        <div id="dem"></div>
+        <button id="btn">call me</button>
+        
+        <script src="events.js"></script>
+        <script>
+           var nodelist=document.querySelectorAll("p");
+           document.getElementById("dem").innerHTML=nodelist.length;
+        </script>
+    </body>
+</html>
